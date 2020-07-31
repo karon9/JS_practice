@@ -1,0 +1,26 @@
+<HTML>
+
+<HEAD>
+    <TITLE>数学関数の練習</TITLE>
+    <SCRIPT Language="JavaScript">
+        function MYKANSU() {
+            N = Number(document.MYFORM.KAZU.value);
+            document.MYFORM.KAZU1.value= N *2;
+            document.MYFORM.KAZU2.value= 2 * Math.PI * N;
+            document.MYFORM.KAZU3.value= Math.PI * N * N;
+        }
+    </SCRIPT>
+</HEAD>
+
+<BODY>
+    <FORM name="MYFORM">
+        数値（円の半径）を入力してから、計算ボタンをクリックしなさい。<BR>
+        入力欄：<INPUT type="text" name="KAZU"><BR>
+        直径は、<INPUT type="text" name="KAZU1"><BR>
+        円周は、<INPUT type="text" name="KAZU2"><BR>
+        面積は、<INPUT type="text" name="KAZU3"><BR>
+        <INPUT type="button" value="計算" onClick="MYKANSU()">
+    </FORM>
+</BODY>
+
+</HTML>

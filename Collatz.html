@@ -1,0 +1,37 @@
+<HTML>
+
+<HEAD>
+    <TITLE>コラッツの問題</TITLE>
+</HEAD>
+
+<BODY>
+    <SCRIPT Language="JavaScript">
+
+        document.write("コラッツの問題<BR>");
+        KAZU = 33;
+        document.write(KAZU + " → ");
+        var count = 0
+        n = KAZU
+
+        document.writeln(n);
+
+        while (count < 1000) {
+            n = collatz(n);
+            document.writeln(n);
+        }
+
+        function collatz(x) {
+            if (x % 2 == 0) {
+                x = x / 2;
+            }
+            else {
+                x = x * 3 + 1;
+            }
+            count += 1
+
+            return x;
+        }
+    </SCRIPT>
+</BODY>
+
+</HTML>
